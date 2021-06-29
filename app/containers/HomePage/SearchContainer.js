@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { makeStyles } from "@material-ui/styles";
+import ResultContainer from "./ResultContainer";
 import messages from "./messages";
 import Input from "./Input";
 const useStyles = makeStyles({
@@ -15,13 +16,13 @@ const useStyles = makeStyles({
 });
 const SearchContainer = () => {
   const [searchText, setSearchText] = useState("");
-
+  // console.log(searchText);
   return (
     <>
       <div>
         <Input searchText={searchText} setSearchText={setSearchText} />
       </div>
-      <div />
+      <ResultContainer text={searchText} />
     </>
   );
 };
