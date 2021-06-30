@@ -32,7 +32,8 @@ const useStyles = makeStyles({
   },
   play: {
     margin: "5px",
-    padding: "7px"
+    padding: "7px",
+    cursor: "pointer"
   },
   meanings: {
     padding: "20px 10px"
